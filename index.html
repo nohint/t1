@@ -1,0 +1,117 @@
+<?
+include($_SERVER['DOCUMENT_ROOT']."/common/extract.php") ;
+
+if(!$PG) { $PG='company' ; }
+include "$_SERVER[DOCUMENT_ROOT]/company/H.php" ;
+?>
+
+
+<? if($PG=='company') { ?>
+
+		<h1>회사소개</h1>
+
+
+		<table style='width:100%;table-layout:fixed;'>
+		<col style='width:320px'><col>
+		<tr valign=top>
+		<td><img src='img/company_img.jpg'><br><br><br><img src='img/company_best.gif'></td>
+
+		<td>
+				<p><img src='img/company_img2.gif'></p>
+				<div style='line-height:1.9;text-align:justify;'>
+				DVmall은 치과와 기공소에 필요한 일반 치과재료에서부터 치과용 의약품, 치과용 합금, 임프란트, 치과용 소장비 및 기공 기자재에 이르기까지 <b><span style='color:#8b0304'>Dental에 관한 One-Stop쇼핑이 가능한 곳</span></b>입니다.<br><br>
+
+				유통 과정의 혁신과 대량 매입을 통하여 보다 나은 제품을 합리적인 가격으로 공급함과 동시에 30여명의 전 직원이 각 파트별 지역별 업무 분담으로 다양한 서비스를 제공하고 있습니다.<br><br>
+
+				또한, 단순히 재료만 판매하는 곳이 아니라 의료 서비스 향상을 위하여 각종 세미나 개최 및 해외 연수의 기회를 제공하는 등 보다 앞선 치과 재료업체가 되기 위하여 부단히 노력하는 기업입니다.<br><br>
+
+				치과 재료업체로서는 드물게 <span style='color:#ff6600'><b>KGMP</b>(우수의약품 제조 및 품질관리기준)와 <b>KGSP</b>(우수의약품 유통관리기준)을 획득</span>하였으며 선생님들의 대금결제 편의를 위하여 <span style='color:#009999'>업계 최초로 Dental 구매카드 시스템을 완비</span>하였습니다. <br><br>
+
+				(주)디브이몰(DVmall)은 치과 재료업계 선두 기업으로서 책임을 다하고자 끊임없는 노력과 연구하는 업체가 될 것을 약속드리며, 변함없는 관심과 격려부탁드립니다.<br>
+				</div>
+
+
+				<br><br>
+
+				<table class='tbl1'>
+				<col style='width:80px;'><col>
+				<?
+				$C[]="1985. 06|북부치과재료상사 창립" ;
+				$C[]="2000. 03|신흥의 전국 111개 특약점중 최우수 대상을 수상" ;
+				$C[]="2000. 07|(주)북부덴탈로 법인 전환" ;
+				//$C[]="2000. 08|구미지점 포항지점 개설로 경북지역 유통망 확충" ;
+				$C[]="2000. 11|수입의약품 판매허가 획득" ;
+				$C[]="2001. 07|KGSP허가획득(우수의약품유통관리기준:식약청)" ;
+				$C[]="2001. 09|북부덴탈 쇼핑몰구축" ;
+				//$C[]="2002. 04|GC Korea의 최우수 판매 업체로 선정" ;
+				$C[]="2003. 03|(주)신흥의 신상품 최우수판매상 수상" ;
+				//$C[]="2003. 05|GC Korea의 최우수 판매업체로 선정" ;
+				$C[]="2004. 08|Dentphoto와 업무제휴" ;
+				//$C[]="2004. 09|서울지사 설립" ;
+
+				$C[]="2007. 06|제조업 허가 및 제조품목 허가, KGMP 인증" ;
+				//$C[]="2008. 03|(주)북부덴탈 확장이전" ;
+				//$C[]="2008. 12|K2 Dia-Bur 자체 제조 및 판매 (KGMP 인증!)" ;
+				$C[]="2010. 02|KFDA 인증, 조직은행 설립!!" ;
+				$C[]="2020. 07|DVmall 으로 상호 변경" ;
+
+				foreach($C as $V) {
+					$val = explode('|',$V) ;
+					echo("<tr><td style='text-align:center;padding:5px;'><b>$val[0]</b></td><td style='padding:5px;'>$val[1]</td></tr>") ;
+				}
+				?>
+				</table>
+
+				<br><br><br><br>
+
+				<div style='text-align:center;'>
+						<img src='img/attestation_02.jpg'><br><br>
+						<?if(0){?>
+						<img src='img/attestation_03.gif'><br><br>
+						<img src='img/attestation_06.gif'><br><br>
+						<img src='img/attestation_07.gif'><br><br>
+						<?}?>
+						<img src='img/attestation_08.gif'><br><br>
+				</div>
+
+
+		</td>
+		</tr>
+		</table>
+
+		<br>
+
+
+
+
+
+
+<? } else if($PG=='map') { ?>
+
+		<h1>찾아오시는 길</h1>
+
+		<? if(0) { ?>
+		<div style='text-align:center;'><img src='img/map_img.gif'></div>
+		<? } ?>
+
+		<br><br><br><br><br>
+		<!-- <div style='text-align:center;font-size:21px;' class='sans'>서울특별시 서대문구 서소문로 45, 812호 (합동, 에스케이리쳄블)</div> -->
+		<div style='text-align:center;font-size:21px;' class='sans'>서울시 중구 청파로 450, 신흥빌딩 9층 (중림동)</div>
+		<div style='text-align:center;margin-top:50px;font-size:19px;' class='sans'>고객상담 & 전화문의 : 1544-2809   (Fax : 02-312-1173)</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+		<br><br>
+
+
+
+<? } else { ?>
+
+
+
+<? } ?>
+
+
+
+
+
+<? include "$_SERVER[DOCUMENT_ROOT]/company/F.php" ; ?>
